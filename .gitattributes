@@ -1,0 +1,14 @@
+* text=auto eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.toml text eol=lf
+*.scm text eol=lf
+*.sql text eol=lf
+Makefile text eol=lf
+LICENSE text eol=lf
+*.png binary
+*.jpg binary
+*.whl binary
+*.gz binary

@@ -1,0 +1,5 @@
+; tree-sitter queries for Python extraction (optional, used when tree-sitter is installed)
+(function_definition name: (identifier) @symbol.function)
+(class_definition name: (identifier) @symbol.class)
+(import_statement name: (dotted_name) @require)
+(import_from_statement module_name: (dotted_name) @require)

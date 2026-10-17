@@ -1,0 +1,16 @@
+skill: example
+version: 1
+sources:
+  - glob: "**/*.md"
+    parser: markdown
+    nodes: [skill, section]
+  - glob: "**/*.py"
+    parser: python
+    nodes: [file, symbol]
+  - glob: "**/*.sql"
+    parser: sql
+    nodes: [sql_table, sql_query]
+rules:
+  - {edge: contains, from: skill, to: section}
+  - {edge: references, from: section, match: backtick.code_ref}
+  - {edge: requires, from: symbol, match: python.import}

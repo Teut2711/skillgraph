@@ -1,0 +1,8 @@
+include README.md
+include LICENSE
+include pyproject.toml
+include Makefile
+recursive-include src/skillgraph *.py
+recursive-include src/skillgraph/data *.scm *.md *.yaml
+recursive-exclude * __pycache__
+recursive-exclude * *.pyc
